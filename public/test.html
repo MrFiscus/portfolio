@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Example</title>
+    
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZwT" crossorigin="anonymous">
+     <!-- Pixel CSS -->
+     <link type="text/css" rel="stylesheet" href="./windows-95-ui-kit/css/pixel.css">
+     <!-- Style CSS  -->
+     <link  type="text/css" rel="stylesheet" href="./style.css">
+      <!-- Bootstrap CSS -->
+      <link type="text/css" rel="stylesheet" href="./windows-95-ui-kit/node_modules/bootstrap/dist/css/bootstrap.min.css">
+      <!-- <script src="script.js"></script> -->
+</head>
+<body>
+
+    <script type="text/javascript">
+        var clockElement = document.getElementById('clock');
+    
+        function clock() {
+            var date = new Date();
+
+        }
+    
+        setInterval(clock, 1000);
+    </script>
+
+   
+  
+
+<div style="height: 50vh; width: 50vh;">
+   <h1>time:</h1> <span id="clock"></span>
+
+</div>
+</body>
+</html>
