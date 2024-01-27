@@ -31,20 +31,68 @@ body{
     background-color: teal;
 }
 
+#logo-subimages{
+    margin-top: 50px;
+    
+}
+
 a:hover{
     text-decoration: none;
+}
+
+
+@media (max-width:499px){
+
+    #home-main-container{
+        padding-top: 10px;
+    
+    }
+
+    #photo-main{
+        display: none;
+        opacity: 0%;
+    }
+
+
+}
+
+@media (min-width:480px) and (max-width:1200px){
+    #navbar-footer{
+
+position:fixed;
+bottom:0px;
+top:0px;
+width:100%;
+}
+
+#logo-windows{
+display: none;
+opacity: 0%;
+}
+
+
+
+
+}
+
+@media (min-width:600px ) and (max-width:1200px)
+{
+    #photo-main{
+        display: none;
+        opacity: 0%;
+    }
 }
 
     </style>
     
     
-    <section  id="intro" class="section section-lg overflow-hidden z-2 pt-50  ">
+    <section  id="intro" class="section section-lg   ">
         
         <div class="container z-2">
             <h4 class="text-center" ><img id="logo-windows" src="img/kisspng-windows-95-microsoft-logo-windows-1-0-windows-logos-5ab71991eabb44.5845274615219490739615.png" alt="" srcset="" width="60px" height="60px"><!------- <span id="printf"><strong> >> printf("Hello Everyone!");</strong></span>-----></h4>
-            <div class="row justify-content-center pt-6 pt-md-5 pb-0 mb-2">
+            <div class="row justify-content-center ">
                 
-                <div class="col-12 col-xl-10">
+                <div id="home-main-container" class="col-12 col-xl-10 justify-content-center">
                     <div class="card card-tertiary  ">
                         <div class="card-header text-center">
                             <h6 class="logo"> Smaran Pokharel </h6>
@@ -54,7 +102,8 @@ a:hover{
                                 <div class="col col-xl-8 ">
                                     ‎ ‎ <span class="text first-text">-I am a</span>
                                     <span class="text sec-text"> Web Developer</span>
-                            <h6 id="text-1" >‎ ‎‎ ‎-Languages and Tools: <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="./img/bootstrap-logo-black.png" alt="bootstrap" width="22" height="22"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="./img/letter-c.png" alt="c" width="22" height="22"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="./img/css-3.png" alt="css3" width="22" height="22"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="./img/figma.png" alt="figma" width="22" height="22"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="./img/html.png" alt="html5" width="22" height="22"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="./img/java-script.png" alt="javascript" width="22" height="22"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="./img/adobe-photoshop (1).png" alt="photoshop" width="22" height="22"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="22" height="22"/> </a> </h6  >
+                            <h6 id="text-1" >‎ ‎‎ ‎-Languages and Tools: <br> <br>‎ ‎<a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="./img/bootstrap-logo-black.png" alt="bootstrap" width="22" height="22"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="./img/letter-c.png" alt="c" width="22" height="22"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="./img/css-3.png" alt="css3" width="22" height="22"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="./img/figma.png" alt="figma" width="22" height="22"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="./img/html.png" alt="html5" width="22" height="22"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="./img/java-script.png" alt="javascript" width="22" height="22"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="./img/adobe-photoshop (1).png" alt="photoshop" width="22" height="22"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="22" height="22"/> </a> </h6  >
+                            
                                 <script>
                                     const text = document.querySelector(".sec-text");
                             
@@ -82,9 +131,10 @@ a:hover{
                             
                                     Hello there! I'm a high school graduate who is extremely passionate about web development and design. Even though I am just 17 years old, I have had experience creating and working on various websites for quite some time. I try to bring a unique blend of technical expertise and creative thinking to every project I contribute to. My skill set includes proficiency in HTML, CSS, JavaScript, and various web development frameworks. I also love graphic design, and I am proficient in using Photoshop as well as other design software. I am committed to delivering high-quality websites with great functionality and design.
                                 </p>
+                               
                                 
                                 </div>
-                                <div class=" col-auto  col-xl-4 ">
+                                <div id="photo-main" class=" col-auto  col-xl-4 ">
                                     <a class="card-text  "  href=""><img id="image-me" src="img/profile picture.jpg" alt="logo" width="100%" height="100%"></a>
                                 </div>
                             </div>
@@ -119,7 +169,7 @@ a:hover{
     
     <footer>
         <nav id="navbar-footer"
-            class="navbar navbar-main navbar-expand-lg navbar-dark justify-content-between navbar-footer  ">
+            class="navbar d-flex flex-row navbar-main navbar-expand-lg navbar-dark justify-content-between navbar-footer  ">
             <ul class="navbar-nav navbar-nav-hover flex-row align-items-center">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link" role="button">
@@ -147,7 +197,7 @@ a:hover{
                     </li>
                 </li>
                 </ul>
-            <div class="time text-center">
+            <div  id="time" class="time text-center">
                 <span class="time text-uppercase">9:21 AM</span>
             </div>
         </nav>
@@ -164,6 +214,7 @@ For Git--
   ---  git branch -M main----
 ---git remote add origin https://github.com/MrFiscus/portfolio.git---
     git push -u origin master
+    ////(optional)git push -f origin master
  -->
 
 

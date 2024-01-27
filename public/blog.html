@@ -26,7 +26,7 @@
       }
       body{
         background-color: teal;
-    height: 895px;
+    
       }
      
       .img-fluid{
@@ -71,10 +71,48 @@ width:100%;
 
   }
 
+  @media (max-width:499px){
+    #navbar-footer{
+
+      position:fixed;
+   bottom:0px;
+   top:0px;
+   width:100%;
+     }
+
+     #logo-windows{
+      display: none;
+      opacity: 0%;
+     }
+
+     #time{
+      opacity: 0%;
+     }
+
+     .navbar-footer{
+      padding-top: 5px;
+      padding-bottom: 55px;
+     }
+
+     #main-container{
+      padding-top: 75px;
+     }
+  }
+
+  #main-container{
+    margin-top: 0px;
+  }
+
+  @media (min-width:499px) and (max-width:580px)
+  {
+    #time{
+      opacity: 0%;
+     }
+  }
     </style>
   </head>
   <body >
-    <div class="container">
+    <div id="main-container" class="container">
       
         <h5 id="main-text-card" class="text-center" ><strong>>> My Blogs</strong></h5>
       
@@ -377,7 +415,7 @@ width:100%;
                   </li>
               </li>
               </ul>
-          <div class="time text-center">
+          <div id="time" class="time text-center">
               <span class="time text-uppercase">9:21 AM</span>
           </div>
       </nav>

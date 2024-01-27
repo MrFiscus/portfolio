@@ -67,6 +67,42 @@ width:100%;
             opacity: 0;
         }
     }
+
+
+    @media (max-width:499px){
+    #navbar-footer{
+
+      position:fixed;
+   bottom:0px;
+   top:0px;
+   width:100%;
+     }
+
+     #logo-windows{
+      display: none;
+      opacity: 0%;
+     }
+
+     #time{
+      opacity: 0%;
+     }
+
+     .navbar-footer{
+      padding-top: 5px;
+      padding-bottom: 55px;
+     }
+
+     #main-container{
+         padding-top: 45px;
+     }
+  }
+
+  @media (min-width:499px) and (max-width:580px)
+  {
+    #time{
+      opacity: 0%;
+     }
+  }
     </style>
 
 <script>
@@ -87,7 +123,7 @@ width:100%;
     
     <section    class="section .section-sm section-lg overflow-hidden z-2  section-xl pt-0    ">
         <div id="contact-mainbox" class="container z-2"><img id="logo-windows" src="img/kisspng-windows-95-microsoft-logo-windows-1-0-windows-logos-5ab71991eabb44.5845274615219490739615.png" alt="" srcset="" width="60px" height="60px">
-            <div class="row justify-content-center pt-6 pt-md-5 pb-0 mb-2  ">
+            <div id="main-container" class="row justify-content-center pt-6 pt-md-5 pb-0 mb-2  ">
                 <div class="col-12 col-sm 11 col-xl-10 ">
                     <div class="card card-tertiary  ">
                         <div class="card-header text-center">
@@ -234,8 +270,8 @@ width:100%;
                     </li>
                 </li>
                 </ul>
-            <div class="time text-center">
-                <span class="time text-uppercase">9:21 AM</span>
+            <div id="time" class="time text-center">
+                <span  class="time text-uppercase">9:21 AM</span>
             </div>
         </nav>
     </footer>
